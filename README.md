@@ -62,13 +62,21 @@ Dates: Not in the future, not older than 2 years
 Duplicates: Removes duplicate property IDs
 
 **Project Structure**
+
 realtor-scraper/
+
 ├── function_app.py                    # Main Azure Function
+
 ├── test_realtor_property_data.py      # Data validation tests
+
 ├── requirements.txt                   # Dependencies
+
 ├── .env.example                       # Environment variable template
+
 ├── .gitignore                         # Git ignore rules
+
 └── README.md                          # This file
+
 **Key Features**
 
 Retry Logic: Automatically retries failed database connections
