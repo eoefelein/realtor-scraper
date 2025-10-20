@@ -1,5 +1,6 @@
 Austin Rental Property Scraper
 An Azure Function that scrapes rental listings from Realtor.com for Austin, TX and stores them in Azure SQL Database.
+
 What It Does
 
 Runs daily at 9 AM UTC
