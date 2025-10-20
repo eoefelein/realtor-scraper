@@ -4,9 +4,13 @@ An Azure Function that scrapes rental listings from Realtor.com for Austin, TX a
 **What It Does**
 
 Runs daily at 9 AM UTC
+
 Fetches rental properties from Realtor.com API
+
 Validates data quality (prices, locations, property details)
+
 Stores listings in Azure SQL Database
+
 Tracks new properties and updates existing ones
 
 **Setup**
