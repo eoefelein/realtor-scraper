@@ -1,4 +1,4 @@
-Austin Rental Property Scraper
+∙LatestCopyPublishAustin Rental Property Scraper
 An Azure Function that scrapes rental listings from Realtor.com for Austin, TX and stores them in Azure SQL Database.
 What It Does
 
@@ -10,13 +10,13 @@ Tracks new properties and updates existing ones
 
 Setup
 1. Install Dependencies
-pip install -r requirements.txt
+bashpip install -r requirements.txt
 2. Configure Environment Variables
 Create a .env file:
 REALTOR_SQL_DB_CONNECTION_STRING=your_connection_string
 RAPIDAPI_KEY=your_api_key
 3. Run Locally
-func start
+bashfunc start
 Database Schema
 active_listings
 
@@ -37,10 +37,8 @@ Property features
 School information
 Pet policies
 
-Testing
-Run tests:
-pytest test_realtor_scraper.py -v
-Tests verify:
+Tests
+Testing verifies:
 
 Prices are reasonable ($500-$25,000/month)
 Coordinates are within Austin bounds
@@ -60,12 +58,12 @@ Duplicates: Removes duplicate property IDs
 
 Project Structure
 realtor-scraper/
-├── function_app.py          # Main Azure Function
-├── test_realtor_property_data.py     # Data validation tests
-├── requirements.txt            # Dependencies
-├── .env.example               # Environment variable template
-├── .gitignore                 # Git ignore rules
-└── README.md                  # This file
+├── function_app.py                    # Main Azure Function
+├── test_realtor_property_data.py      # Data validation tests
+├── requirements.txt                   # Dependencies
+├── .env.example                       # Environment variable template
+├── .gitignore                         # Git ignore rules
+└── README.md                          # This file
 Key Features
 
 Retry Logic: Automatically retries failed database connections
