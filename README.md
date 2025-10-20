@@ -24,20 +24,31 @@ bashfunc start
 active_listings
 
 property_id - Unique property identifier
+
 listing_id - MLS listing ID
+
 location_address_line - Street address
+
 location_address_zipcode - Zip code
+
 list_date - Date property was listed
+
 last_observed - Last time we saw this listing
 
 property_data
+
 Contains detailed property information including:
 
 Pricing and financials
+
 Beds, baths, square footage
+
 Location coordinates
+
 Property features
+
 School information
+
 Pet policies
 
 **Tests**
@@ -45,10 +56,15 @@ Pet policies
 Testing verifies:
 
 Prices are reasonable ($500-$25,000/month)
+
 Coordinates are within Austin bounds
+
 Required fields are present
+
 No duplicate properties
+
 Dates are valid
+
 Property specs (beds/baths/sqft) are reasonable
 
 **Data Validation**
@@ -56,9 +72,13 @@ Property specs (beds/baths/sqft) are reasonable
 The scraper validates:
 
 Prices: $500 - $25,000 per month
+
 Location: Coordinates within Austin, TX bounds (30.0-30.6°N, -98.0 to -97.5°W)
+
 Property specs: Reasonable bedroom, bathroom, and square footage ranges
+
 Dates: Not in the future, not older than 2 years
+
 Duplicates: Removes duplicate property IDs
 
 **Project Structure**
@@ -80,7 +100,11 @@ realtor-scraper/
 **Key Features**
 
 Retry Logic: Automatically retries failed database connections
+
 Rate Limiting: Waits 1 second between API requests
+
 Error Handling: Continues processing even if individual records fail
+
 Comprehensive Logging: Detailed logs for monitoring and debugging
+
 Data Quality: Validates all data before insertion
