@@ -20,6 +20,7 @@ RAPIDAPI_KEY=your_api_key
 bashfunc start
 
 **Database Schema**
+
 active_listings
 
 property_id - Unique property identifier
