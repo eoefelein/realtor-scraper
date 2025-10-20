@@ -25,7 +25,7 @@ bashfunc start
 
 **Database Schema**
 
-active_listings
+*active_listings*
 
 property_id - Unique property identifier
 
@@ -39,7 +39,7 @@ list_date - Date property was listed
 
 last_observed - Last time we saw this listing
 
-property_data
+*property_data*
 
 Contains detailed property information including:
 
